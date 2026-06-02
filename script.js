@@ -31,8 +31,8 @@ switch (timeOfTheYear) {
 
 function checkSquaredNumber() {
     let num = prompt("Enter a number to check if it can be squared");
-    if (num < 0) {
-        alert("Negative numbers cannot be squared");
+    if (isNaN(num)) {
+        alert("Please enter a valid number");
     } else {
         alert("The square of " + num + " is " + (num * num));
     }
@@ -40,8 +40,8 @@ function checkSquaredNumber() {
 
 function checkCubedNumber() {
     let num = prompt("Enter a number to check if it can be cubed");
-    if (num < 0) {
-        alert("Negative numbers cannot be cubed");
+    if (isNaN(num)) {
+        alert("Please enter a valid number");
     } else {
         alert("The cube of " + num + " is " + (num * num * num));
     }
